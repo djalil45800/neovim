@@ -13,6 +13,9 @@ require("nvim-web-devicons").setup()
 require("oil").setup({
 	default_file_explorer = true,
 	columns = { "icon" },
+	view_options = {
+		show_hidden = true,
+	},
 })
 
 vim.keymap.set("n", "<leader>e", vim.cmd.Oil)
