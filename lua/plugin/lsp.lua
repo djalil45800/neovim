@@ -29,7 +29,9 @@ require("blink.cmp").setup({
 	snippets = { preset = "default" },
 	fuzzy = {
 		prebuilt_binaries = {
-			download = false,
+			download = true,
+			implementation = "prefer_rust",
+			force_version = "v1.*",
 		},
 	},
 	sources = {
