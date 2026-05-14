@@ -3,7 +3,7 @@ vim.pack.add({
 	{ src = "https://github.com/williamboman/mason-lspconfig.nvim" },
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	{ src = "https://github.com/Saghen/blink.cmp" },
-	{ src = "https://github.com/rafamadriz/friendly-snippets" },
+	-- { src = "https://github.com/rafamadriz/friendly-snippets" },
 	{ src = "https://github.com/stevearc/conform.nvim" },
 })
 
@@ -50,6 +50,7 @@ require("blink.cmp").setup({
 require("conform").setup({
 	formatters_by_ft = {
 		lua = { "stylua" },
+		rust = { "rustfmt" },
 	},
 	format_on_save = {
 		timeout_ms = 500,
